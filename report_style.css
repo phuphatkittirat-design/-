@@ -1,0 +1,182 @@
+.top-nav {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.home-link {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.home-link:hover {
+    background-color: #357abd;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #222;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    margin: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="radio"] {
+    margin-right: 6px;
+    cursor: pointer;
+    accent-color: #4a90e2;
+}
+
+button {
+    background-color: #4a90e2;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15px;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+table {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #4a90e2;
+    color: white;
+}
+
+thead th {
+    padding: 12px 15px;
+    font-weight: 600;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: #f1f7ff;
+}
+
+tbody td {
+    padding: 12px 15px;
+    font-size: 15px;
+}
+
+tbody td a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+tbody td a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    body {
+        padding: 15px;
+    }
+
+    form {
+        font-size: 14px;
+    }
+
+    label {
+        margin: 0 8px;
+    }
+
+    button {
+        margin-left: 8px;
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 16px;
+        border-bottom: 2px solid #ddd;
+        padding: 10px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+    }
+
+    tbody td {
+        padding: 8px 10px;
+        text-align: right;
+        font-size: 14px;
+        border: none;
+        position: relative;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: 600;
+        color: #555;
+        text-align: left;
+        font-size: 13px;
+    }
+
+    tbody td a {
+        display: inline-block;
+        margin-top: 6px;
+    }
+}

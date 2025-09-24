@@ -1,0 +1,145 @@
+/* Font & Reset */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9fbfd;
+    color: #2c3e50;
+    padding: 40px;
+}
+
+/* Container */
+.container {
+    max-width: 750px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading */
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form Card */
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.main-img {
+    width: 220px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Extra Images */
+.extra-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.image-box {
+    text-align: center;
+}
+
+.thumb {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+/* Buttons */
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.25s ease;
+}
+
+.save {
+    background-color: #3498db;
+    color: white;
+}
+
+.save:hover {
+    background-color: #2980b9;
+}
+
+.cancel {
+    background-color: #bdc3c7;
+    color: #2c3e50;
+}
+
+.cancel:hover {
+    background-color: #95a5a6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .main-img {
+        width: 100%;
+    }
+
+    .thumb {
+        width: 80px;
+        height: 80px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
